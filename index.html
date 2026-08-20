@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#8d63e6">
+  <title>Nuestra historia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="background-music" autoplay loop preload="auto">
+    <source src="assets/audio/aroma-a-nostalgia-instrumental.mp3" type="audio/mpeg">
+  </audio>
+  <main>
+    <header class="hero"><div class="hero__content"><span class="eyebrow" id="hero-eyebrow"></span><h1 id="hero-title"></h1><p id="hero-intro"></p><a class="scroll-cue" href="#recuerdos">Descubre nuestra historia <span>↓</span></a></div></header>
+    <section class="timeline-section" id="recuerdos" aria-labelledby="timeline-title"><div class="section-heading"><h2 id="timeline-title"></h2><p id="timeline-intro"></p></div><div class="timeline" id="timeline"></div><div class="ending"><div class="heart">♥</div><p id="ending-text"></p></div></section>
+  </main>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><article class="modal-card"><button class="close" id="close" aria-label="Cerrar recuerdo">×</button><div class="reveal"><img id="modal-image" alt=""><div class="reveal-copy"><span class="tiny">Un recuerdo de</span><strong id="reveal-title"></strong></div><div class="reveal-progress"></div></div><div class="detail"><div class="photo-collage" id="photo-collage" aria-label="Fotos de este recuerdo"></div><span class="date" id="modal-date"></span><h2 id="modal-title"></h2><p id="modal-description"></p><blockquote id="modal-quote"></blockquote><button class="again" id="again">↻ Ver animación otra vez</button></div></article></div>
+  <script src="content.js"></script><script src="app.js"></script>
+</body>
+</html>
